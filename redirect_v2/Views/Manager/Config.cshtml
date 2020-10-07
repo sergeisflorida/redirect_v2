@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Configuration</title>
+    <style>
+        html {
+            font-family: "Tahoma";
+            background-color: black;
+            color: white;
+            font-size: 11pt;
+        }
+
+        input {
+            border: 0;
+            background: #eee;
+            -webkit-appearance: none;
+            box-shadow: none;
+            border-radius: 0px;
+        }
+
+            input:focus, select:focus, textarea:focus, button:focus {
+                outline: none;
+            }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        Configuration. Sample: 123=https://google.com
+        <p>
+            <textarea id="keys" name="keys" spellcheck="false" height="127px" width="100%"
+                      textmode="MultiLine" wrap="False" borderwidth="1px"
+                      style="margin: 0px; width: 476px; height: 208px;">@ViewBag.keys</textarea>
+        </p>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
